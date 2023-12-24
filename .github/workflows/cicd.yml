@@ -29,8 +29,6 @@ jobs:
           context: ./dockerfiles/app/
           file: ./dockerfiles/app/Dockerfile
           tags: cotswoldsmaker/dcsp:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
       
       - name: Testing inside Docker container
         run: >
