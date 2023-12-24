@@ -23,14 +23,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       
-      - name: Build and push image using cache
-        uses: docker/build-push-action@v5
-        with:
-          context: ./dockerfiles/app/
-          file: ./dockerfiles/app/Dockerfile
-          tags: cotswoldsmaker/dcsp:latest
-          push: true
-      
       - name: Testing inside Docker container
         run: >
           DJANGO_SECRET_KEY='${{ secrets.DJANGO_SECRET_KEY }}' 
