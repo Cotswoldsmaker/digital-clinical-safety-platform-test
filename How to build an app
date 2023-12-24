@@ -18,7 +18,7 @@
 >> django-admin startproject dcsp
 * Jump into the newly created project.
 >> cd ./dcsp
-* Create a new django app
+* Create a new django app.
 >> python3 manage.py startapp app
 * Start up the basic Django app and then go to http://0.0.0.0:8000
 >> python3 manage.py runserver 0.0.0.0:8000
