@@ -16,7 +16,7 @@
 * Good reading resource - https://realpython.com/django-setup/
 * Create a new django project
 >> django-admin startproject dcsp
-* Jump into the newly created project
+* Jump into the newly created project.
 >> cd ./dcsp
 * Create a new django app
 >> python3 manage.py startapp app
